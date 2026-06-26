@@ -22,4 +22,4 @@ The extension is built in Java and leverages a dedicated `ColorLogicHandler` (`c
 ## Usage Strategy
 This tool is designed for direct action. Rather than passively reading through standard traffic logs, use the visual indicators to identify specific roadblocks or interesting behaviors—such as highlighting permission-denied responses to test for access control bypasses, or flagging specific JSON parameters for IDOR testing. Let the `ColorLogicHandler` streamline your manual testing workflow.
 
-## By- PankajKrYadav
+By- PankajKrYadav
