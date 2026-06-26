@@ -2,7 +2,9 @@
 
 ## Overview
 Visual Filter is a custom Burp Suite extension built to accelerate manual vulnerability hunting. By systematically color-coding and filtering HTTP traffic, it cuts through the noise of the Proxy history. This enables hunters to instantly spot anomalies, specific parameters, and endpoints prone to IDOR, XSS, and business logic flaws without manually digging through thousands of standard requests.
-![Burpsuite VisualScope Extension](Images/2.png)
+![Burpsuite VisualScope Extension Image 1](Images/2.png)
+![Burpsuite VisualScope Extension Image 2](Images/3.png)
+
 ## Architecture
 The extension is built in Java and leverages a dedicated `ColorLogicHandler` (`com.pankajkryadav.FilterExtension$ColorLogicHandler`). This handler evaluates incoming HTTP traffic against defined criteria and applies specific highlighting logic to the Burp Suite UI, ensuring high-impact requests stand out immediately.
 
@@ -10,7 +12,7 @@ The extension is built in Java and leverages a dedicated `ColorLogicHandler` (`c
 * **Dynamic Traffic Highlighting:** Automatically color-codes requests and responses in the HTTP history based on custom logic.
 * **Noise Reduction:** Isolates the exact traffic needed for deep manual testing, removing the friction of parsing irrelevant endpoints.
 * **Targeted Reconnaissance:** Makes it visually intuitive to track parameter reflections, state changes, and potential logic bypasses across active sessions.
-
+![Burpsuite VisualScope Extension](Images/1.png)
 ## Installation
 1. Open Burp Suite.
 2. Navigate to the **Extensions** tab.
